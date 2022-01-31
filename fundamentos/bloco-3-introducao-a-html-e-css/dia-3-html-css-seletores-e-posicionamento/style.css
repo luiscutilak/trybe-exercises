@@ -1,0 +1,45 @@
+/* .super-mario {
+  width: 150px;
+  position: relative;
+  left: 100px;
+  top: 100px;
+}
+
+.goomba {
+  width: 100px;
+  padding: auto;
+  margin: 100px
+}
+
+.baloon {
+top: 100px;
+}
+
+.speach {
+  font-size: 20px;
+  position: relative;
+  top: 110px;
+  left: 30px;
+}
+
+.bowser {
+  width: 200px;
+  position: relative;
+  left: 300px;
+  top: 350px;
+} */
+
+p, div {
+text-align: center;
+background-color: skyblue;
+}
+
+li:hover {
+  background-color: silver;
+}
+
+ol: {
+  
+}
+/* transition: all; course // nao entendi o que faz.pseudo classe, perguntar aula ao vivo
+
