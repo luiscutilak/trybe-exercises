@@ -81,14 +81,55 @@
 // } 
         
 // 6.Escreva um programa que receba o nome de uma peça de xadrez e retorne os movimentos que ela faz.
-const chess = () => ("horse").toLowerCase();
-    if (chess != "bishop") {
-        console.log("diagonals")
-    }
-      else 
-        console.log("Error");
+// let chess = ("Horse").toLowerCase();
+//     if (chess === "bishop") {
+//         console.log("diagonals")
+//     }
+//       else 
+//         console.log("Error");
 
 //  Como desafio, faça o programa funcionar tanto se receber o nome de uma peça com letras maiúsculas quanto com letras minúsculas, sem aumentar a quantidade de condicionais.
 // Como dica, você pode pesquisar uma função que faz uma string ficar com todas as letras minúsculas (lower case) .
 // Se a peça passada for inválida, o programa deve retornar uma mensagem de erro.
 // Exemplo: bishop (bispo) -> diagonals (diagonais)
+
+// 7.Escreva um programa que converte uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F. Siga essas regras:
+
+// Porcentagem >= 90 -> A
+// Porcentagem >= 80 -> B
+// Porcentagem >= 70 -> C
+// Porcentagem >= 60 -> D
+// Porcentagem >= 50 -> E
+// Porcentagem < 50 -> F
+// O programa deve retornar uma mensagem de erro e encerrar se a nota passada for menor que 0 ou maior que 100.
+
+
+// let note = 50;
+// switch (note) {
+//   case 90:
+//     console.log("A");
+//     break;
+//   case 80:
+//     console.log("B");
+//     break;
+//     case 70:
+//     console.log("C");
+//     break;
+//   case 60:
+//     console.log("D");
+//     break;case 50:
+//     console.log("E");
+//     break;
+//   case 50:
+//     console.log("F");
+//     break;
+//     default:
+//     console.log("No value found");
+// }
+
+// 8.Escreva um programa que defina três números em constantes e retorne true se pelo menos uma das três for par. Caso contrário, ele retorna false .
+// Bonus: use somente um if .
+
+const num1 = 10;
+const num2 = 20;
+const num3 = 30;
