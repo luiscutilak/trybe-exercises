@@ -158,18 +158,18 @@
 // lucro = valorVenda - valorCustoTotal (lucro de um produto)
 
 
-const salesPrice = 210; 
-const costPrice = 150;
-let profit = 0;
-let totalCostValue = 0;
+// const salesPrice = 210; 
+// const costPrice = 150;
+// let profit = 0;
+// let totalCostValue = 0;
 
-if (salesPrice < 0 || costPrice < 0) {
-    console.log("Error!");   
-    }  else  
-        totalCostValue = (costPrice / 100)*20 + costPrice;
-        profit = salesPrice - totalCostValue;
-        profit = profit * 1000;
-        console.log(profit);
+// if (salesPrice < 0 || costPrice < 0) {
+//     console.log("Error!");   
+//     }  else  
+//         totalCostValue = (costPrice / 100)*20 + costPrice;
+//         profit = salesPrice - totalCostValue;
+//         profit = profit * 1000;
+//         console.log(profit);
 
 // 11. Uma pessoa que trabalha de carteira assinada no Brasil tem descontados de seu salário bruto o INSS e o IR. Faça um programa que, dado um salário bruto, calcule o líquido a ser recebido.
 // A notação para um salário de R$1500,10, por exemplo, deve ser 1500.10. Para as faixas de impostos, use as seguintes referências:
@@ -196,4 +196,19 @@ if (salesPrice < 0 || costPrice < 0) {
 // Resultado: R$ 2.612,55.
 // Dica: que tal identificar as alíquotas com variáveis de nomes explicativos?
          
+let salarioBruto = 3000;
+let salarioLiquido = 0;
+let resultIr = 0;
+let resultInss = 0;
+const alqInssSobreBruto = 11;
+const alqSobreIr = 7.5;
+const deducaoIr = 142.80;
+let salarioBase = 0;
 
+resultInss = (salarioBruto / 100)*alqInssSobreBruto;
+resultInss = salarioBruto - resultInss;
+
+resultIr = (resultInss / 100)*alqSobreIr;
+salarioBase = resultIr - deducaoIr
+salarioLiquido = resultInss - salarioBase
+console.log(salarioLiquido);
