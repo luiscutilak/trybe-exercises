@@ -62,14 +62,14 @@
 // console.log(factorialNumber(9));
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 const longestWord = (str) => {
-let wordArray = str.split(' ');
-let maxLength = 0;
+let wordArray = str.split(' '); // no caso aspas com espaços quer dizer que quero elas(as strings, separadas)
+let maxLength = 0; // CONTADOR PARA PERCORRER O ARRAY DE PALAVRAS
 let result = ' ';
 
-for (const word of wordArray) {
+for (const word of wordArray) { 
 
-   if (word.length > maxLength) {
-     maxLength = word.length;
+   if (word.length > maxLength) { // SE O COMPRIMENTO DESSA PALAVRA ENCONTRADA FOR MAIOR QUE ESSA PALAVRA ENCONTRADA
+     maxLength = word.length; // O COMPRIMENTO MAXIMO SERA O COMPRIMENTO DESSA PALAVRA.
       result =  word;
    }
  }
