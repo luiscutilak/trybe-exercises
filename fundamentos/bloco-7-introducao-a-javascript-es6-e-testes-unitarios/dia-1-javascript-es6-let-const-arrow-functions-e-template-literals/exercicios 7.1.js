@@ -71,10 +71,8 @@ for (const word of wordArray) {
    if (word.length > maxLength) {
      maxLength = word.length;
       result =  word;
-      console.log(word);
    }
  }
  return result;
 }
 
-console.log(longestWord('Antônio foi no banheiro e não sabemos o que aconteceu'));
