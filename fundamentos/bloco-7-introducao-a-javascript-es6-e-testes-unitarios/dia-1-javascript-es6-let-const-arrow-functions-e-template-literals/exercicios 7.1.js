@@ -61,20 +61,23 @@
 // }
 // console.log(factorialNumber(9));
 // +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-const longestWord = (str) => {
-let wordArray = str.split(' '); // no caso aspas com espaços quer dizer que quero elas(as strings, separadas)
-let maxLength = 0; // CONTADOR PARA PERCORRER O ARRAY DE PALAVRAS
-let result = ' ';
+// const longestWord = (str) => {
+// let wordArray = str.split(' '); // no caso aspas com espaços quer dizer que quero elas(as strings, separadas)
+// let maxLength = 0; // CONTADOR PARA PERCORRER O ARRAY DE PALAVRAS
+// let result = ' ';
 
-for (const word of wordArray) { 
+// for (const word of wordArray) { 
 
-   if (word.length > maxLength) { // SE O COMPRIMENTO DESSA PALAVRA ENCONTRADA FOR MAIOR QUE ESSA PALAVRA ENCONTRADA
-     maxLength = word.length; // O COMPRIMENTO MAXIMO SERA O COMPRIMENTO DESSA PALAVRA.
-      result =  word;
-   } 
- }
- return result;
-}
+//    if (word.length > maxLength) { // SE O COMPRIMENTO DESSA PALAVRA ENCONTRADA FOR MAIOR QUE ESSA PALAVRA ENCONTRADA
+//      maxLength = word.length; // O COMPRIMENTO MAXIMO SERA O COMPRIMENTO DESSA PALAVRA.
+//       result =  word;
+//    } 
+//  }
+//  return result;
+// }
 // longestWord em uma linha ;) 
 
-const longestWord = (str) => str.split(' ').sort((wordA, wordB) => wordB.length - wordA.length) [0]; // O método split traz para nós, todas as palavras(palavra por palavra em string) Depois o método .sort() chama o argumento da função e faz uma comparação no caso =>(a-b) e depois [0] para trazer a string solicitada 
+// const longestWord = (str) => str.split(' ').sort((wordA, wordB) => wordB.length - wordA.length) [0]; // O método split traz para nós, todas as palavras(palavra por palavra em string) Depois o método .sort() chama o argumento da função e faz uma comparação no caso =>(a-b) e depois [0] para trazer a string solicitada 
+
+// * =============================================================================
+
