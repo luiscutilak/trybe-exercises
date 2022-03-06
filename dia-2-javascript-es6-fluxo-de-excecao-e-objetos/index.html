@@ -17,7 +17,7 @@
   <script>
 
     const verifiedCalcInput = (value1, value2) => {
-      if (typeof value1 !== 'number' || typeof value2 !== 'number') {
+      if (!value1 || !value2) {
         throw new Error('value1 or value2 is not valid')
         alert('value1 or value2 is not valid');
       }
@@ -32,7 +32,9 @@
       document.getElementById('value1').value = '';
       document.getElementById('value2').value = '';
     } catch (error) {
-    throw error.message;
+        document.getElementById('result').innerHTML = `Error: ${error.message}`; // innerHTML pega o erro e lança na tela(display). A mensagem lançada esta na linha 21;
+        document.getElementById('value1').value = '';
+        document.getElementById('value2').value = '';
    }
   };
     window.onload = () => {
@@ -42,4 +44,3 @@
   </script>
 </body>
 </html>
-
