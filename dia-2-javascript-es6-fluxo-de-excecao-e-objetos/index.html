@@ -33,12 +33,11 @@
       verifiedCalcInput(parseInt(value1), parseInt(value2));
       const result = parseInt(value1) + parseInt(value2);
       document.getElementById('result').innerHTML = `Resultado: ${result}`;
-      document.getElementById('value1').value = '';
-      document.getElementById('value2').value = '';
     } catch (error) {
         document.getElementById('result').innerHTML = `Error: ${error.message}`; // innerHTML pega o erro e lança na tela(display). A mensagem lançada esta na linha 21;
-        document.getElementById('value1').value = '';
-        document.getElementById('value2').value = '';   
+   } finally {
+     document.getElementById('value1').value = '';
+     document.getElementById('value2').value = ''; // apaga o input após tratar o erro ou após seguir o fluxo(try)
    }
   };
     window.onload = () => {
