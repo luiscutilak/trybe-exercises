@@ -148,21 +148,36 @@ const customerInfo = (order) => {
 console.log(customerInfo(order));
 
 const orderModifier = (order) => {
-  // Adicione abaixo as informações necessárias.
+const newBuyer = order.name = "Luis Cutilak";
+const pizzas = Object.keys(order.order.pizza); // Nessa linha Object.keys acessa as PIZZAS porém no retorno da função devemos apontar o index das pizzas desejadas, pois elas estao em um array.
+const drink = order.order.drinks.coke.type = "Fanta Uva";
+const paymentSalesOff = order.order.payment = "50";
+  return `Olá ${newBuyer}, o total do seu pedido de ${pizzas[0]}, ${pizzas[1]} e ${drink}, é R$ ${paymentSalesOff},00`;
+};
+ console.log(orderModifier(order));
 
-}
+// EXERCICIO 3
 
-// orderModifier(order);
-// const países = {
-//   França: 'Paris',
-//   Brasil: 'Brasília',
-//   Espanha: 'Madrid',
-//   Portugal: 'Lisboa',
-// };
-// const pairKeyValue = Object.entries(países);
-// console.log(pairKeyValue);
-// for(index in pairKeyValue) {
-//   console.log('--------');
-//   console.log('País:', pairKeyValue[index][0]);
-//   console.log('Capital:', pairKeyValue[index][1]);
-// };
+ const lesson1 = {
+  materia: 'Matemática',
+  numeroEstudantes: 20,
+  professor: 'Maria Clara',
+  turno: 'manhã',
+};
+
+const lesson2 = {
+  materia: 'História',
+  numeroEstudantes: 20,
+  professor: 'Carlos',
+};
+
+const lesson3 = {
+  materia: 'Matemática',
+  numeroEstudantes: 10,
+  professor: 'Maria Clara',
+  turno: 'noite',
+};
+
+const addLessons = (obj, key, value) => {
+  
+}  
